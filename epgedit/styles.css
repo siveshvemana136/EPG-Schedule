@@ -1,0 +1,200 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#epg-container {
+    width: 90%;
+    overflow-x: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#channel-select {
+    float: right;
+    margin-bottom: 50px;
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 7px;
+    width: 170px;
+    height: 45px;
+    font-size: 18px;
+}
+
+#date-picker {
+    padding: 5px;
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#epg-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#channel-header {
+    column-width: 500px;}
+
+#epg-table th, #epg-table td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#epg-table th {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+#epg-table td {
+    background-color: #222;
+}
+
+#epg-table tr:nth-child(even) td {
+    background-color: #1a1a1a;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+.draggable {
+    cursor: grab;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+.dropzone {
+    border: 2px dotted #5D5C5B;
+    height: 50px;
+}
+
+.ad-row {
+    background-color: #444;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.ad-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad-controls button {
+    background-color: #444;
+    color: #e0e0e0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+ }
+
+ #submit-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #3464a5f9;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+.air-time-header {
+    width: 150px;
+}
+
+.rules-header {
+    width: 300px;
+}
+
+#prev-day-button, #next-day-button {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#validate-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #3464a5f9;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#validate-button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+.invalid-movie {
+    background-color: #ff0101;
+}
+
+.invalid-program {
+    background-color: #ff0101 !important; 
+    color: #ffffff; 
+}
+
+#prev-day-button:hover, #next-day-button:hover {
+    background-color: #555;
+}
+
+.mid-night {
+    background-color: #603165 !important;
+}
+
+.early-morning {
+    background-color: #97624f !important;
+}
+
+.morning-time {
+    background-color: #989844 !important;
+}
+
+.late-morning {
+    background-color: #437c43 !important;
+}
+
+.afternoon-time {
+    background-color: #33596b !important;
+}
+
+.evening-time {
+    background-color: #7c4533 !important;
+}
+
+.prime-time {
+    background-color: #747eaa !important;
+}
+
+.late-night {
+    background-color: #433232 !important;
+}
+

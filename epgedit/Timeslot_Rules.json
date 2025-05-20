@@ -1,0 +1,358 @@
+
+	[
+		{
+		 "Rule Id" : "Id1",
+		 "Rule Title" : "Adult Rated",
+		 "Rule Precedence" : 100,
+		 "Rule Desc" : "Adult Rated Movies has to be telecasted at Late Nights",
+		 "Rule Short Desc" : "Adult Rated Movies at Late Night",
+		 "Condition" :
+		 {
+		   "AND":[
+		        {	
+					"Field" : "pc_rating",
+					"Expression" : "<=",
+					"Right Parameter" : "NC-17"
+		        },
+				{	
+					"Field" : "pc_rating",
+					"Expression" : ">=",
+					"Right Parameter" : "R"
+		        }
+			]
+		 },
+		 "Result":
+		 {		 "Parameter" : "Time Slot",
+				 "End Result" : "Late Night"
+		 }
+		},
+		
+		{
+		 "Rule Id" : "Id2",
+		 "Rule Title" : "Family Rated",
+		 "Rule Precedence" : 0,
+		 "Rule Desc" : "The Movies of ratings that can be seen by Family audience",
+		 "Rule Short Desc" : "Family Audience Movies at Prime Time",
+		 "Condition" :
+		 {		
+		   "AND":[
+				{
+					"Field" : "pc_rating",
+					"Expression" : "<=",
+					"Right Parameter" : "PG-13"					
+		        },
+				
+				{
+					"Field" : "pc_rating",
+					"Expression" : ">=",
+					"Right Parameter" : "G"
+				}
+			]
+		  },
+		 "Result":
+		 {		 "Parameter" : "Time Slot",
+				 "End Result" : "Prime Time"
+		 }
+		},
+		
+		
+		
+		{
+		 "Rule Id" : "Id3",
+		 "Rule Title" : "Highly Rated Films",
+		 "Rule Precedence" : 80,
+		 "Rule Desc" : "Movies which are Highly Rated for their Content",
+		 "Rule Short Desc" : "Highly Rated Movies at Prime Time",
+		 "Condition" :
+		 {		
+	       "OR":[
+				{
+					"Field" : "imdb_rating",
+					"Expression" : ">=",
+					"Right Parameter" : "7"
+				}
+			]
+		 },
+		 "Result":
+		 {		 "Parameter" : "Time_Slot",
+				 "End Result" : "Prime Time"
+		 }
+		},
+		
+		{
+		 "Rule Id" : "Id4",
+		 "Rule Title" : "Poorly Rated Films",
+		 "Rule Precedence" : 70,
+		 "Rule Desc" : "Movies which are Poorly Rated for their Content",
+		 "Rule Short Desc" : "Poorly Rated Films at Late Night",
+		 "Condition" :
+		 {
+		   "OR":[
+				{		
+					"Field" : "imdb_rating",
+					"Expression" : "<=",
+					"Right Parameter" : "4.5"
+				}
+			]
+		 },
+		 "Result":
+		 {		 "Parameter" : "Time Slot",
+				 "End Result" : "Late Night"
+		 }
+		},
+		
+		{
+		 "Rule Id" : "Id5",
+		 "Rule Title" : "Moderately Rated Films",
+		 "Rule Precedence" : 0,
+		 "Rule Desc" : "Movies which are Moderately Rated for their Content",
+		 "Rule Short Desc" : "Moderately Rated Films at AfterNoon Time",
+		 "Condition" :
+		 {		
+		   "OR":[
+				{
+					"Field" : "imdb_rating",
+					"Expression" : ">",
+					"Right Parameter" : "4.5"
+				}
+			]
+		 },
+		 "Result":
+		 {		 "Parameter" : "Time Slot",
+				 "End Result" : "Afternoon Time"
+		 }
+		},
+		
+		{
+		 "Rule Id" : "Id6",
+		 "Rule Title" : "Family Based Films",
+		 "Rule Precedence" : 50,
+		 "Rule Desc" : "Family Based movies has to be shown in the morning and early afternoon",
+		 "Rule Short Desc" : "Family Genre movies at Morning",
+		 "Condition" :
+		 {		
+		   "OR":[
+				{
+					"Field" : "genres",
+					"Expression" : "==",
+					"Right Parameter" : "Family"
+				}
+			]
+		 },
+		 "Result":
+		 {		 
+				"Parameter" : "Time Slot",
+				"End Result" : "Morning Time"
+		 }
+		 },
+		 
+		{
+		 "Rule Id" : "Id7",
+		 "Rule Title" : "Family and Comedy Based Films",
+		 "Rule Precedence" : 0,
+		 "Rule Desc" : "Family with Comedy Based movies has to be shown in the morning and early afternoon",
+		 "Rule Short Desc" : "Family with Comedy genre films at Afternoon",
+		 "Condition" :
+		 {
+		   "OR":[
+				{		
+					"Field" : "genres",
+					"Expression" : "==",
+					"Right Parameter" : "Family"
+		        },
+			    {
+					"Field" : "genres",
+					"Expression" : "==",
+					"Right Parameter" : "Comedy Family"
+			   }
+		    ]
+		 },
+		  "Result":
+		  {		 "Parameter" : "Time Slot",
+				 "End Result" :  "Afternoon Time"
+		  }
+		 },
+		 
+		{
+		 "Rule Id" : "Id8",
+		 "Rule Title" : "Action Thriller Based Films",
+		 "Rule Precedence" : 30,
+		 "Rule Desc" : "Action Based movies has to be telecasted in the Prime Time",
+		 "Rule Short Desc" : "Action Movies at Prime Time",
+		 "Condition" :
+		 {	
+		   "OR":[
+				{
+					"Field" : "genres",
+					"Expression" : "==",
+					"Right Parameter" : "Action Thriller"
+				}
+			]
+		 },	
+		
+		 "Result":
+		 {		 "Parameter" : "Time Slot",
+				 "End Result" : "Prime Time"
+		 }
+		},
+		  
+		{
+		 "Rule Id" : "Id9",
+		 "Rule Title" : "Old movies",
+		 "Rule Precedence" : 0,
+		 "Rule Desc" : "Old movies will be aired at midnights",
+		 "Rule Short Desc" : "Old Movies at LateNights",
+	     "Condition" :
+		 {
+			"OR":[
+				 {		
+					"Field" : "year",
+					"Expression" : "<=",
+					"Right Parameter" : "1990"
+				 }
+	        ]
+		  },
+		   
+		
+		  "Result":
+		   {		 
+				 "Parameter" : "Time Slot",
+				 "End Result" : "Late Night"
+		   }
+          },
+		  
+		  {
+		   "Rule Id": "Id10",
+		   "Rule Title": "Old Classic Movies",
+		   "Rule Precedence" : 10,
+           "Rule Desc": "Old classic movies with high ratings will be aired in the morning",
+		   "Rule Short Desc" : "Old Classic Movies at Early Morning",
+		   "Condition":
+		   { 
+		     "AND":[
+				   {
+					 "Field": "year",
+					 "Expression": "<=",
+					 "Right Parameter": "1990"
+				   },
+				   {
+					"Field": "imdb_rating",
+					"Expression": ">",
+					"Right Parameter": "7.5"
+				  }
+		     ]
+		  },
+		  "Result": 
+		  {
+					"Parameter": "Time Slot",
+					"End Result": "Early Morning"
+		  }
+		},
+
+		{
+		  "Rule Id" : "Id11",
+		  "Rule Title" : "Recent Movies",
+		  "Rule Precedence" : 9,
+		  "Rule Desc" : "Recent Movies has to be aired at Prime Time",
+		  "Rule Short Desc" : "Recent Movies at Prime Time",
+		  "Condition" :
+		  {
+		    "AND":[	
+       			  {		
+					 "Field" : "year",
+					 "Expression" : ">=",
+					 "Right Parameter" : "2010"
+				  },
+				 {
+				     "Field" : "imdb_rating",
+					 "Expression" : ">=",
+					 "Right Parameter" : "7.5"
+				 }
+			 ]
+			},
+		
+		   "Result":
+		   {		 
+				 "Parameter" : "Time Slot",
+				 "End Result" : "Prime Time"
+		   }
+         },
+		 
+		 {
+		  "Rule Id" : "Id12",
+		  "Rule Title" : "Kids movies",
+		  "Rule Precedence" : 8,
+		  "Rule Desc" : "Kids movies will be aired at Mornings",
+		  "Rule Short Desc" : "Kids Genres movies at Mornings",
+		  "Condition" :
+		  {	
+		    "OR":[
+				 {
+					"Field" : "genres",
+					"Expression" : "==",
+					"Right Parameter" : "Cartoon"
+				 }
+			 ]
+		  },
+		  "Result":
+		   {		 
+				 "Parameter" : "Time Slot",
+				 "End Result" : "Morning Time"
+		   }
+          },
+		  
+		  {
+		  "Rule Id" : "Id13",
+		  "Rule Title" : "Light Hearted movies",
+		  "Rule Precedence" : 0,
+		  "Rule Desc" : "Light Hearted movies will be aired on the Day Time",
+		  "Rule Short Desc" : "Light Hearted Movies at Evening",
+		  "Condition" :
+		  {	
+		    "OR":[
+				 {		
+					"Field" : "genres",
+					"Expression" : "==",
+					"Right Parameter" : "Cartoon"
+				 },
+				 {
+					"Field" : "genres",
+					"Expression" : "==",
+					"Right Parameter" : "Comedy"
+				 }
+		     ]
+		   },
+		   "Result":
+			{		 
+				 "Parameter" : "Time Slot",
+				 "End Result" : "Evening Time"
+			}
+		  },
+		  
+		  {
+		  "Rule Id" : "Id14",
+		  "Rule Title" : "Horror movies",
+		  "Rule Precedence" : 6,
+		  "Rule Desc" : "Horror movies has to be telecasted at Nights.",
+		  "Rule Short Desc" : "Horror Movies at Nights",
+		  "Condition" :
+		  {		
+			"OR":[
+				 {
+				 "Field" : "genres",
+				 "Expression" : "==",
+				 "Right Parameter" : "Horror"
+		        }
+			 ]
+           },
+		
+		   "Result":
+		   {		 
+				 "Parameter" : "Time Slot",
+				 "End Result" : "Late Night"
+		   }
+          }
+		  
+		 
+		
+	]

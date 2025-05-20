@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EPG Program Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+<body>
+    <div id="epg-container">
+        <div id="header-container">
+            <select id="channel-select"></select>
+            <button id="prev-day-button"><</button>
+            <input type="date" id="date-picker" />
+            <button id="next-day-button">></button>
+        </div>
+        <table id="epg-table">
+            <thead>
+                <tr>
+                    <th class="air-time-header">Air Time (incl. Gap Filler)</th>
+                    <th id="channel-header">Programs</th>
+                    <th class="rules-header">Applied Rules</th>
+                </tr>
+            </thead>
+            <tbody id="epg-body">
+                <!-- Program schedule will be inserted here -->
+            </tbody>           
+            <button id="submit-button" disabled>Save</button>
+            <button id="validate-button" disabled>Validate</button>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

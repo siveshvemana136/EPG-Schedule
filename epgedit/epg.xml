@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="Some tv generator">
+  <channel id="1">
+		<display-name lang="en">Action</display-name>
+		<icon src="https://example.com/Action_logo.png"/>
+	</channel>
+	<channel id="2">
+		<display-name lang="en">Romance</display-name>
+		<icon src="https://example.com/Romance_logo.png"/>
+	</channel>
+  <program channel="1" start="20240930000000" stop="20240930013200">
+		<title lang="en" id="tt0358349" duration="92">Agent Cody Banks 2 Destination London</title>
+		<desc lang="en">With all-new gadgets high-flying action exciting chases and a wisecracking new handler Derek (Anthony Anderson) Cody has to retrieve the device before the world's leaders fall under the evil control of a diabolical villain.</desc>
+		<genre lang="en">Comedy</genre>
+		<rating lang="en">NC-17</rating>
+		<ad_slate_length>120</ad_slate_length>
+	</program>
+	<program channel="1" start="20240930013200" stop="20240930030400">
+		<title lang="en" id="tt0176269" duration="92">Universal Soldier The Return</title>
+		<desc lang="en">Luc Deveraux the heroic former Universal Soldier is about to be thrown into action once again. When Seth (Michael Jai White) the supercomputer controlled ultra-warrior decides to take revenge and destroy its creators only Luc can stop it. All hell breaks loose as Luc battles Seth and a deadly team of perfect soldiers in a struggle that pits man against machine and good against evil.</desc>
+		<genre lang="en">Action Science Fiction</genre>
+		<rating lang="en">PG-13</rating>
+		<ad_slate_length>120</ad_slate_length>
+	</program>
+	<program channel="1" start="20240930030400" stop="20240930042600">
+		<title lang="en" id="tt1276104" duration="82">Looper</title>
+		<desc lang="en">In the futuristic action thriller Looper time travel will be invented but it will be illegal and only available on the black market. When the mob wants to get rid of someone they will send their target 30 years into the past where a looper a hired gun like Joe is waiting to mop up. Joe is getting rich and life is good until the day the mob decides to close the loop sending back Joe's future self for assassination.</desc>
+		<genre lang="en">Action Thriller Science Fiction</genre>
+		<rating lang="en">NC-17</rating>
+		<ad_slate_length>120</ad_slate_length>
+	</program>
+	<program channel="1" start="20240930042600" stop="20240930055800">
+		<title lang="en" id="tt0115624" duration="92">Barb Wire</title>
+		<desc lang="en">A sexy nightclub owner Barb Wire moonlights as a mercenary in Steel Harbor one of the last free zones in the now fascist United States. When scientist Cora Devonshire wanders into Barb's establishment she gets roped into a top-secret government plot involving biological weapons. Soon Barb is reunited with her old flame Axel Hood who is now Cora's husband and a guerrilla fighter resulting in plenty of tense action.</desc>
+		<genre lang="en">Action Science Fiction</genre>
+		<rating lang="en">PG-13</rating>
+		<ad_slate_length>120</ad_slate_length>
+	</program>
+	<program channel="1" start="20240930055800" stop="20240930073000">
+		<title lang="en" id="tt0216216" duration="92">The 6th Day</title>
+		<desc lang="en">Futuristic action about a man who meets a clone of himself and stumbles into a grand conspiracy about clones taking over the world.</desc>
+		<genre lang="en">Action Mystery Science Fiction Thriller</genre>
+		<rating lang="en">PG</rating>
+		<ad_slate_length>120</ad_slate_length>
+	</program>
+	<program channel="2" start="20240930000000" stop="20240930013200">
+		<title lang="en" id="tt0118055" duration="92">Up Close &amp; Personal</title>
+		<desc lang="en">Tally Atwater has a dream: to be a prime-time network newscaster. She pursues this dream with nothing but ambition raw talent and a homemade demo tape. Warren Justice is a brilliant hard edged veteran newsman. He sees Tally has talent and becomes her mentor. Tallyâ&#8364;&#8482;s career takes a meteoric rise and she and Warren fall in love. The romance that results is as intense and revealing as television news itself. Yet each breaking story every videotaped crisis that brings them together also threatens to drive them apart...</desc>
+		<genre lang="en">Drama Romance</genre>
+		<rating lang="en">NC-17</rating>
+		<ad_slate_length>120</ad_slate_length>
+	</program>
+	<program channel="2" start="20240930013200" stop="20240930031400">
+		<title lang="en" id="tt1592873" duration="102">LOL</title>
+		<desc lang="en">In a world connected by YouTube iTunes and Facebook Lola and her friends navigate the peer pressures of high school romance and friendship while dodging their sometimes overbearing and confused parents. When Lola's mom Anne "accidentally" reads her teenage daughter's racy journal she realizes just how wide their communication gap has grown.</desc>
+		<genre lang="en">Drama Comedy Romance</genre>
+		<rating lang="en">G</rating>
+		<ad_slate_length>120</ad_slate_length>
+	</program>
+	<program channel="2" start="20240930031400" stop="20240930045600">
+		<title lang="en" id="tt0098309" duration="102">She-Devil</title>
+		<desc lang="en">A cunning and resourceful housewife vows revenge on her husband when he begins an affair with a wealthy romance novelist.</desc>
+		<genre lang="en">Comedy</genre>
+		<rating lang="en">NC-17</rating>
+		<ad_slate_length>120</ad_slate_length>
+	</program>
+	<program channel="2" start="20240930045600" stop="20240930063800">
+		<title lang="en" id="tt1396208" duration="102">Action Replayy</title>
+		<desc lang="en">A young man tries to revive his parents' wilting marriage in a unique manner - travel to the 1970s when their romance was budding and make it bloom. This is more complex than he expects.</desc>
+		<genre lang="en">Drama Comedy Romance Foreign</genre>
+		<rating lang="en">G</rating>
+		<ad_slate_length>120</ad_slate_length>
+	</program>
+	<program channel="2" start="20240930063800" stop="20240930080000">
+		<title lang="en" id="tt1493842" duration="82">Beauty &amp; the Briefcase</title>
+		<desc lang="en">A freelance writer looking for romance sells a story to Cosmopolitan magazine about finding love in the workplace and goes undercover at a Finance Company.</desc>
+		<genre lang="en">Romance Comedy</genre>
+		<rating lang="en">G</rating>
+		<ad_slate_length>120</ad_slate_length>
+	</program>
+	<program channel="2" start="20240930080000" stop="20240930094200">
+		<title lang="en" id="tt1826590" duration="102">About Last Night</title>
+		<desc lang="en">A modern reimagining of the classic romantic comedy this contemporary version closely follows new love for two couples as they journey from the bar to the bedroom and are eventually put to the test in the real world.</desc>
+		<genre lang="en">Comedy Romance</genre>
+		<rating lang="en">G</rating>
+		<ad_slate_length>120</ad_slate_length>
+	</program>
+</tv>
